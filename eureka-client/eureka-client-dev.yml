@@ -1,3 +1,20 @@
+#eureka
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+    registry-fetch-interval-seconds: 30
+  instance:
+    appname: eureka-client
+    hostname: eureka-client
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}:@project.version@
+
+
+env:
+  active: dev
 
 
 
