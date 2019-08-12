@@ -1,0 +1,3 @@
+foo: version test 21
+client:
+  message: hello spring io
